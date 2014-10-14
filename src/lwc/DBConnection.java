@@ -1,6 +1,6 @@
 package lwc;
 import java.sql.*;
-
+//版本2，第三次修改
 public class DBConnection {
 	Connection con = null;
 	Statement sta = null;

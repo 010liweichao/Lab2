@@ -1,7 +1,7 @@
 package lwc;
 
 
-
+//版本2，第二次修改
 public class Book {
 	private String ISBN;
 	private String Title;
