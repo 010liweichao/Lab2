@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<include file="struts-default.xml"/>
+		<package name="lwc" extends="struts-default">
+			<action name="AuthorAction" class="lwc.AuthorAction">
+				<!-- 添加 -->
+				<result name="SUCCESS">index.jsp</result>
+				<result name="ADD">index.jsp</result>
+				<result name="SELECT">selectBook.jsp</result>
+				<result name="ERROR">error.jsp</result>
+			</action>
+			<action name="BookAction" class="lwc.BookAction">
+				<!--添加 -->
+				<result name="ERROR">error.jsp</result>
+				<result name="AddAuthor">addAuthor.jsp</result>
+				<result name="ADD">index.jsp</result>
+				<result name="SHOW">showall.jsp</result>
+				<result name="SELECT">showall.jsp</result>
+				<result name="DELETE">index.jsp</result>
+				<result name="CHANGE">update.jsp</result>
+				<result name="UPDATE">index.jsp</result>
+			</action>
+			<action name="InfoAction" class="lwc.Info">
+				<result name="INFO">information.jsp</result>
+			</action>
+		</package>
+</struts> 
+  
